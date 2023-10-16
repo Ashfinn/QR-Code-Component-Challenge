@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32"
+			href="./images/favicon-32x32.png">
+
+		<title>Frontend Mentor | QR code component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+	</head>
+	<body>
+
+		<div id="container">
+			<div id="qr">
+				<img src="images/image-qr-code.png" alt="qr">
+			</div>
+			<div id="text">
+				<h1>Improve your front-end skills by building projects</h1>
+				<p>Scan the QR code to visit Frontend Mentor and take your coding skills
+					to another level</p>
+			</div>
+
+		</div>
+		<style>
+			@font-face {
+				font-family: 'Outfit';
+				src:url(/Outfit/Outfit-VariableFont_wght.ttf);
+			}
+			body { 
+				background-color: rgb(213,225,239);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0;
+				height: 100vh;
+			}
+			#container 
+			{ 	background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 300px;
+				height: 460px;
+				flex-direction: column;
+				margin: 0 auto;
+				overflow:initial;
+				padding-top: 20px;
+				
+				border-radius: 20px;
+  				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+			}
+			#qr{
+				margin-left: 10px;
+				margin-right: 10px;
+				margin-top: -20px;
+			}
+			#qr img{
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+				border-radius: 10px;
+			}
+			#text {
+				text-align: center;
+				font-family: 'outfit';
+				font-weight: 400 700;
+				padding-left: 25px;
+				padding-right: 25px;
+				padding-top: 10px;
+				padding-bottom: 20px;
+			}
+			#text p{
+				color: hsl(211, 9%, 47%);
+				font-size: 14px;
+			}
+			#text h1{
+				font-size: 19px;
+			}
+		</style>
+	</body>
+</html>
